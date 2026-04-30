@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image, Hyperlink and Nested Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        img {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            border: 3px solid #333;
+        }
+
+        a {
+            color: white;
+            background-color: darkblue;
+            padding: 10px 1px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: green;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 70%;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nested-table {
+            width: 100%;
+            background-color: #d9f2ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Web Page</h1>
+
+    <!-- Image Section -->
+    <h2>Beautiful Nature Image</h2>
+    <img src="https://via.placeholder.com/250x150" alt="Sample Image">
+
+    <br><br>
+
+    <!-- Hyperlink Section -->
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <!-- Main Table -->
+    <h2>Student Details with Nested Table</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>John Doe</td>
+            <td>
+                <!-- Nested Table -->
+                <table class="nested-table">
+                    <tr>
+                        <th>Age</th>
+                        <th>Course</th>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Computer Engineering</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Jane Smith</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Age</th>
+                        <th>Course</th>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Information Technology</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
