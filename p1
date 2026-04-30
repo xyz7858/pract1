@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+</head>
+<body>
+
+    <h1 align="center"><u>My Personal Details</u></h1>
+
+    <p><b>Name:</b> John Doe</p>
+    <p><b>Age:</b> <i>20 Years</i></p>
+    <p><b>Course:</b> <u>Computer Engineering</u></p>
+    <p><b>College:</b> <strong>ABC College of Engineering</strong></p>
+    <p><b>Hobbies:</b> <em>Reading, Coding, Traveling</em></p>
+    <p><b>Email:</b> <mark>johndoe@example.com</mark></p>
+    <p><b>Mobile:</b> <small>+91 9876543210</small></p>
+
+</body>
+</html>
