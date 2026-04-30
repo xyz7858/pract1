@@ -7,30 +7,26 @@
 
     <h2>Student Registration Form</h2>
 
-    <form method="post" action="">
-        Name: <input type="text" name="name" required>
+    <form method="post">
+        Name: <input type="text" name="name">
         <br><br>
 
-        Email: <input type="email" name="email" required>
+        Email: <input type="text" name="email">
         <br><br>
 
-        Course: <input type="text" name="course" required>
+        Course: <input type="text" name="course">
         <br><br>
 
         <input type="submit" value="Submit">
     </form>
 
     <?php
-    // PHP's $_POST superglobal collects submitted form data sent with method="post" :contentReference[oaicite:0]{index=0}
+    // $_POST stores form data using the input field's name attribute as the key. :contentReference[oaicite:0]{index=0}
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = htmlspecialchars($_POST['name']);
-        $email = htmlspecialchars($_POST['email']);
-        $course = htmlspecialchars($_POST['course']);
-
         echo "<h3>Submitted Details:</h3>";
-        echo "Name: " . $name . "<br>";
-        echo "Email: " . $email . "<br>";
-        echo "Course: " . $course . "<br>";
+        echo "Name: " . $_POST['name'] . "<br>";
+        echo "Email: " . $_POST['email'] . "<br>";
+        echo "Course: " . $_POST['course'] . "<br>";
     }
     ?>
 
