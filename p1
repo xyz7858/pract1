@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personal Details</title>
+    <title>Pavan Sandbhor - Personal Information</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right, lightblue, lightpink);
+            text-align: center;
+        }
+
+        .box{
+            background: white;
+            width: 450px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1{
+            color: darkblue;
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+
+        p{
+            font-size: 18px;
+            color: black;
+        }
+
+        .about{
+            text-align: justify;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        b{
+            color: darkred;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1 align="center"><u>My Personal Details</u></h1>
+    <div class="box">
 
-    <p><b>Name:</b> John Doe</p>
-    <p><b>Age:</b> <i>20 Years</i></p>
-    <p><b>Course:</b> <u>Computer Engineering</u></p>
-    <p><b>College:</b> <strong>ABC College of Engineering</strong></p>
-    <p><b>Hobbies:</b> <em>Reading, Coding, Traveling</em></p>
-    <p><b>Email:</b> <mark>johndoe@example.com</mark></p>
-    <p><b>Mobile:</b> <small>+91 9876543210</small></p>
+        <h1>Personal Information</h1>
+
+        <p><b>Name:</b> Pavan Sandbhor</p>
+        <p><b>Age:</b> 20</p>
+        <p><b>Occupation:</b> Student</p>
+        <p><b>Address:</b> Pune, Maharashtra</p>
+        <p><b>Email:</b> pavan@gmail.com</p>
+        <p><b>Phone:</b> 8329937236</p>
+
+        <h1>About Me</h1>
+
+        <p class="about">
+            Hello! My name is Pavan Sandbhor. I am a Computer Engineering student with a strong interest in programming and web development. I enjoy learning new technologies and improving my coding skills. My aim is to become a successful software engineer and build innovative projects in the future.
+        </p>
+
+        <h1>Educational Details</h1>
+
+        <p><b>College Name:</b> PCCOE&R</p>
+        <p><b>Course:</b> Computer Engineering</p>
+        <p><b>Year of Graduation:</b> 2028</p>
+        <p><b>CGPA:</b> 9.5</p>
+        <p><b>10th Grade:</b> 90%</p>
+        <p><b>12th Grade:</b> 70%</p>
+
+        <h1>Hobbies</h1>
+
+        <p>Reading Books</p>
+        <p>Playing Cricket</p>
+        <p>Listening to Music</p>
+
+        <h1>Skills</h1>
+
+        <p>HTML</p>
+        <p>C Programming</p>
+        <p>Java</p>
+
+    </div>
 
 </body>
 </html>
