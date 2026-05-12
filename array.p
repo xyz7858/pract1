@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Array Example</title>
+
+    <title>Array Input Form</title>
+
 </head>
+
 <body>
 
-    <h2>Storing and Displaying Array Values</h2>
+<h2>Enter 3 Names</h2>
 
-    <?php
-    // PHP arrays can store multiple values in one variable and can be displayed using loops like foreach. :contentReference[oaicite:0]{index=0}
+<form method="POST">
 
-    // Store values in an array
-    $students = array("John", "Jane", "Rahul", "Priya", "Amit");
+    <input type="text" name="name[]" placeholder="Enter First Name">
 
-    echo "<h3>Student Names:</h3>";
+    <br><br>
 
-    // Display array values
-    foreach ($students as $value) {
-        echo $value . "<br>";
+    <input type="text" name="name[]" placeholder="Enter Second Name">
+
+    <br><br>
+
+    <input type="text" name="name[]" placeholder="Enter Third Name">
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<?php
+
+if($_SERVER["REQUEST_METHOD"]=="POST")
+{
+    $names = $_POST['name'];
+
+    echo "<h3>Entered Names:</h3>";
+
+    foreach($names as $n)
+    {
+        echo $n."<br>";
     }
-    ?>
+}
+
+?>
 
 </body>
 </html>
